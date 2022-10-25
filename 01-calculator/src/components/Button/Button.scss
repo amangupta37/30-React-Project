@@ -1,0 +1,23 @@
+.Button {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: none;
+
+    &--contained {
+        background-color: #f0f0f0;
+    }
+    &--outlined {
+        border: 2px solid #f0f0f0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        background-color: #917f7f33;
+    }
+}

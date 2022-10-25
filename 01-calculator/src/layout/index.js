@@ -1,6 +1,8 @@
 import React from "react";
+import Button from "../components/Button/Button";
 import Typography from "../components/Typography/Typography";
 import "../style/sass/_utils.scss";
+import "./index.scss";
 const Calculator = () => {
     return (
         <div className="Calculator">
@@ -10,9 +12,14 @@ const Calculator = () => {
                 align="center"
                 color="red"
                 size="3rem"
+                mt="2rem"
             >
-                Calculator
+                Typography Component
             </Typography>
+
+            <Button variant="contained" style={{ color: "red" }}>
+                Button component
+            </Button>
         </div>
     );
 };
