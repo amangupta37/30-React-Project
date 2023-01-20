@@ -1,9 +1,10 @@
-export default function CustomizeVariant(align, size, color, style, props) {
+export default function CustomizeVariant(style, props) {
     const sx = style ? style : "";
     const CustomStyle = {
-        textAlign: align ? align : "",
-        fontSize: size ? size : "",
-        color: color ? color : "",
+        textAlign: props?.align ? props?.align : "",
+        fontSize: props?.size ? props?.size : "",
+        fontWeight: props?.weight ? props?.weight : "",
+        color: props?.color ? props?.color : "",
 
         /* Add custom margin */
         margin: props?.m ? props?.m : "",
